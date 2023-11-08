@@ -1,0 +1,60 @@
+.cartitems {
+margin: 100px 170px;
+}
+
+.cartitems hr{
+height: 3px;
+background: #e2e2e2;
+border: 0;
+}
+.cartitems-format-main{
+display: grid;
+    grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+align-items: center;
+gap: 75px;
+padding-top: 40px;
+color: #454545;
+font-size: 18px;
+font-weight: 600;
+}
+.cartitems-format-main img{
+    height: 50px;
+    width: 70px;
+    object-fit: contain;
+    mix-blend-mode: darken;
+}
+.mainTab{
+    height: 100vh;
+    padding-right: 100px;
+    overflow-x: scroll;
+}
+.mainTab::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    
+    .total,.buyy{
+        margin-left: 270px;
+       width: 90px;
+    }
+   .prod{
+margin-left: -30px  }
+   .prod1{
+    margin-left: 30px;
+}
+}
+
+
+.total p{
+    font-size: larger;
+    font-weight: 700;
+text-align: end;
+}
+.del{
+    transition: all .2s ease-in;
+}
+.del:hover{
+    cursor: pointer;
+   color: rgb(215, 30, 30);
+}
